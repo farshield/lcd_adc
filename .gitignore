@@ -1,0 +1,17 @@
+# MPLab generated files #
+#########################
+funclist
+*.as
+*.cof
+*.hxl
+*.lst
+*.map
+*.mcp
+*.mcs
+*.mcw
+*.obj
+*.p1
+*.pre
+*.rlf
+*.sdb
+*.sym
