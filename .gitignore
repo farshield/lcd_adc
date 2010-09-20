@@ -6,7 +6,6 @@ funclist
 *.hxl
 *.lst
 *.map
-*.mcp
 *.mcs
 *.mcw
 *.obj
