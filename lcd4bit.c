@@ -3,7 +3,7 @@
 #include "pic.h"
 #include "lcd4bit.h"
 
-#define _XTAL_FREQ 1000000  //processor frequency
+#define _XTAL_FREQ 4000000  //processor frequency
 
 //LCD functions
 /*
@@ -18,9 +18,13 @@ void wrstring(char *str);
 // Program Control Function.
 void main(void)
 {
-   lcd_init();   // Initialise the LCD Display
+    lcd_init(); //initialize lcd display
 
-   for (;;)
-   {
-   }
+    TRISA = 0xFF; //set TRISA register as inputs
+    ADCON1 = 0x80; //ADFM=1, all inputs analogue, VREF(+) = VDD
+    ADCON0 = 0xC1; //clock, channel and enable
+
+    for (;;)
+    {
+    }
 }
